@@ -5,7 +5,7 @@ const prisma = new PrismaClient();
 
 // 🌱 Función principal que ejecuta el seeding (sembrado) de datos
 
-async function runSeed () {
+export async function runSeed () {
     console.log("🌱 Ejecutando el seed...");
     // ⚠️ Intenta limpiar la tabla antes de insertar nuevos datos
     try{
@@ -25,7 +25,8 @@ async function runSeed () {
         { name: "Fiona", email: "fiona@example.com" },
         { name: "George", email: "george@example.com" },
         { name: "Hannah", email: "hannah@example.com" },
-        { name: "Ivan", email: "ivan@example.com" }
+        { name: "Diego", email: "diego@example.com" },
+        { name: "Jorge", email: "jorge@example.com" }
         ]
     })
 
